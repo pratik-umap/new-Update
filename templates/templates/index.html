@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Web</title>
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <!-- navbar -->
+    <header class="header">
+        <div class="logo">
+            <i class="fa-sharp fa-solid fa-basket-shopping logo_icon"></i>
+            <h1>Grocery</h1>
+        </div>
+        <ul class="nav_ul">
+            <li class="li">Home</li>
+            <li class="li">Features</li>
+            <li class="li">Products</li>
+            <li class="li">Categories</li>
+            <li class="li">Review</li>
+            <li class="li">Blogs</li>
+        </ul>
+        <div class="icons_box">
+            <button class="icon_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="icon_btn"><i class="fa-solid fa-cart-shopping"></i></button>
+            <a href="login">
+                <button class="icon_btn"><i class="fa-solid fa-user"></i></button>
+            </a>
+        </div>
+    </header>
+    <section class="main_img">
+        <div class="img_container">
+            <h1>Fresh And <span>Organic</span> Products</h1>
+            <h4>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Numquam<br> Vitae Perspiciatis Neque Soluta.</h4>
+            <button class="img_btn">Shop Now</button>
+        </div>
+    </section>
+    <section class="feature">
+        <h1 class="feature_h1">Our Features</h1>
+        <div class="feature_main">
+        <div class="feature_card">
+            <img class="feature_img" src="https://grocery-store-react.netlify.app/image/feature-img-1.png" alt="">
+            <h1>Fresh And Organic</h1>
+            <h4>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.</h4>
+            <button class="img_btn">Read More</button>
+        </div>
+        <div class="feature_card">
+            <img class="feature_img" src="https://grocery-store-react.netlify.app/image/feature-img-2.png" alt="">
+            <h1>Free Delivery</h1>
+            <h4>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.</h4>
+            <button class="img_btn">Read More</button>
+        </div>
+        <div class="feature_card">
+            <img class="feature_img" src="https://grocery-store-react.netlify.app/image/feature-img-3.png" alt="">
+            <h1>Easy Payment</h1>
+            <h4>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.</h4>
+            <button class="img_btn">Read More</button>
+        </div>
+       </div>
+    </section>
+            <!-- product -->
+    <section class="product">
+        <h1 class="feature_h1">Our Products</h1>
+        <div class="feature_main">
+        <div class="feature_card">
+            <img class="product_img" src="https://grocery-store-react.netlify.app/image/product-1.png" alt="">
+            <h1>Fresh Orange</h1>
+            <h3 class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </h3>
+            <h4>20/kg - 30/kg</h4>
+            <button class="img_btn">Add to cart</button>
+        </div>
+        <div class="feature_card">
+            <img class="product_img" src="https://grocery-store-react.netlify.app/image/product-2.png" alt="">
+            <h1>Fresh Onion</h1>
+            <h3 class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </h3>
+            <h4>20/kg - 30/kg</h4>
+            <button class="img_btn">Add to cart</button>
+        </div>
+        <div class="feature_card">
+            <img class="product_img" src="https://grocery-store-react.netlify.app/image/product-7.png" alt="">
+            <h1>Fresh Carrot</h1>
+            <h3 class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </h3>
+            <h4>20/kg - 30/kg</h4>
+            <button class="img_btn">Add to cart</button>
+        </div>
+       </div>
+    </section>
+
+     <!-- product category -->
+     <section class="product">
+        <h1 class="feature_h1">Products Categories</h1>
+        <div class="feature_main">
+        <div class="product_card">
+            <img class="feature_img" src="https://grocery-store-react.netlify.app/image/cat-1.png" alt="">
+            <h1>Vegetables</h1>
+            <h4>Upto 45% Off</h4>
+            <button class="img_btn">Shop Now</button>
+        </div>
+        <div class="product_card">
+            <img class="feature_img" src="https://grocery-store-react.netlify.app/image/cat-2.png" alt="">
+            <h1>Fresh Fruits</h1>
+            <h4>Upto 35% Off</h4>
+            <button class="img_btn">Shop Now</button>
+        </div>
+        <div class="product_card">
+            <img class="feature_img" src="https://grocery-store-react.netlify.app/image/cat-3.png" alt="">
+            <h1>Dairy Products</h1>
+            <h4>Upto 40% Off</h4>
+            <button class="img_btn">Shop Now</button>
+        </div>
+       </div>
+    </section>
+
+    <!-- our Blog  -->
+      <section class="product">
+        <h1 class="blog_h1">Our Blogs</h1>
+        <div class="feature_main">
+            <div class="blog_card">
+                <img class="blog_img" src="https://grocery-store-react.netlify.app/image/blog-1.jpg" alt="">
+                <div class="blog_box_1">
+                    <div class="blog_icon_box">
+                        <h4><i class="fa-solid fa-user blog_icon"></i> By User</h4>
+                        <h4><i class="fa-solid fa-calendar blog_icon"></i> 1st May, 2021</h4>    
+                    </div>
+                   <h2>Fresh And Organic Vegetables And Fruits</h2>
+                   <h4>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veniam, Expedita.</h4>
+                <button class="img_btn blog_btn">Read More</button>
+                </div>
+            </div>
+
+            <div class="blog_card">
+                <img class="blog_img" src="https://grocery-store-react.netlify.app/image/blog-2.jpg" alt="">
+                <div class="blog_box_1">
+                    <div class="blog_icon_box">
+                        <h4><i class="fa-solid fa-user blog_icon"></i> By User</h4>
+                        <h4><i class="fa-solid fa-calendar blog_icon"></i> 1st May, 2021</h4>    
+                    </div>
+                   <h2>Fresh And Organic Vegetables And Fruits</h2>
+                   <h4>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veniam, Expedita.</h4>
+                <button class="img_btn blog_btn">Read More</button>
+                </div>
+            </div>
+
+            <div class="blog_card">
+                <img class="blog_img" src="https://grocery-store-react.netlify.app/image/blog-3.jpg" alt="">
+                <div class="blog_box_1">
+                    <div class="blog_icon_box">
+                        <h4><i class="fa-solid fa-user blog_icon"></i> By User</h4>
+                        <h4><i class="fa-solid fa-calendar blog_icon"></i> 1st May, 2021</h4>    
+                    </div>
+                   <h2>Fresh And Organic Vegetables And Fruits</h2>
+                   <h4>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veniam, Expedita.</h4>
+                <button class="img_btn blog_btn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <h2>Created By <span>Grocerry Designer </span>| All Rights Reserved</h2> 
+    </footer>
+</body>
+</html>

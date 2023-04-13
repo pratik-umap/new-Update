@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #eee;
+}
+
+.header{
+    height: 85px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    height:50px;
+    width: 200px;
+    /* background-color: rebeccapurple; */
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_icon{
+   font-size: 1.7rem;
+    color: #ff7800;
+    margin-right: 7px;
+}
+.nav_ul{
+   height: 50px;
+   width: 600px;
+   /* background-color: red; */
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+}
+.li:hover{
+    color: #ff7800;
+    cursor: pointer;
+}
+.icons_box{
+    height: 50px;
+   width: 200px;
+   /* background-color: blue; */
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.icon_btn{
+    height: 45px;;
+    width:45px;
+    background: #eee;
+    border-radius: 5px;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.icon_btn:hover{
+    background: #ff7800;
+    color: #eee;
+}
+.main_img{
+    /* display: none !important; */
+    height: 450px;
+    width: 100%;
+    background-image: url('https://grocery-store-react.netlify.app/image/banner-bg.webp');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_container{
+    height: 300px;
+    width: 70%;
+    /* background-color: antiquewhite; */
+    padding-top: 80px;
+    text-align: center;
+}
+span{
+    color: #ff7800;
+}
+.img_container > h1{
+    line-height: 4.5rem;
+}
+.img_container > h4{
+    color: #666;
+    font-weight: 200;
+    line-height: 1.8rem;
+}
+.img_btn{
+    padding: 10px 30px;
+    border: 1px solid #130f40;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+.img_btn:hover{
+    background: #ff7800;
+    color: #eee;
+}
+.feature{
+    height: 600px;
+    width: 100%;
+    background-color:#eee;
+    align-items: center;
+}
+.feature_h1{
+    font-size: 30px;
+    padding-top: 40px;
+    text-align: center;
+}
+.feature_main{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.feature_card{
+    height: 400px;
+    width: 350px;
+    background-color:white;
+    text-align: center;
+    border-radius: 10px;
+    outline: 0.1rem solid rgba(0,0,0,0.1);
+    outline-offset: -1rem;
+}
+.feature_card:hover{
+    transform:scale(1.1);
+}
+.feature_img{
+    height: 8rem;
+    margin-top: 50px;
+}
+.feature_card > h1{
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+.feature_card > h4{
+    font-weight: 100;
+    line-height: 1.5rem;
+}
+.rating{
+    color: #ff7800;
+    line-height: 2rem;
+}
+.product{
+    height:550px;
+}
+.product_img{
+    height: 12rem;
+}
+.product_card{
+    height: 340px;
+    width: 300px;
+    background-color:white;
+    text-align: center;
+    border-radius: 10px;
+    outline: 0.1rem solid rgba(0,0,0,0.1);
+    outline-offset: -1rem;
+}
+.product_card:hover{
+    transform:scale(1.1);
+}
+.product_card > h1{
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+.product_card > h4{
+    font-weight: 100;
+    line-height: 1.5rem;
+}
+.blog_h1{
+    font-size: 30px;
+    text-align: center;
+}
+.blog_card{
+    height: 450px;
+    width: 370px;
+    background-color:white;
+    border-radius: 10px;
+}
+.blog_img{
+    width: inherit;
+    height: 220px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.blog_box_1{
+    width: inherit;
+    height: 40px;
+    /* background-color: red; */
+    padding: 0 10px;
+    color: #666;
+    font-weight: 100;
+}
+.blog_icon_box{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 2.2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.blog_icon{
+    color: #ff7800;
+}
+.blog_box_1 > h2{
+  margin-top: 10px;
+  color: black;
+  font-size: 22px;
+}
+.blog_box_1 > h4{
+    line-height: 1.5rem;
+    font-weight: 100;
+}
+.blog_btn{
+    margin-top: 15px;
+}
+.footer{
+    height: 60px;
+    width: 100%;
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer > h2{
+    font-weight: 100;
+}

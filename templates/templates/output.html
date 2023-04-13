@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocerry</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+ <style>
+    .product_output{
+        padding-top: 60px;
+    }
+    .output_box{
+        margin-top: 50px;
+        height: 00px;
+        width: 100%;
+        /* background-color:white ; */
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .card {
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        padding: 1px;
+        text-align: center;
+        height: 270px;
+        width: 250px;
+        border-radius: 5px;
+    }
+    .card:hover{
+         transform:scale(1.1);
+    } 
+    .card > img {
+        height: 200px;
+        width: 200px;
+        padding: 16px;
+        border-radius: 20px;
+    }
+
+    .card  > h4 {
+        margin-top: 16px;
+    } 
+ </style>
+</head>
+<body>
+      <!-- navbar -->
+      <header class="header">
+        <div class="logo">
+            <i class="fa-sharp fa-solid fa-basket-shopping logo_icon"></i>
+            <h1>Grocery</h1>
+        </div>
+        <ul class="nav_ul">
+            <li class="li">Home</li>
+            <li class="li">Features</li>
+            <li class="li">Products</li>
+            <li class="li">Categories</li>
+            <li class="li">Review</li>
+            <li class="li">Blogs</li>
+        </ul>
+        <div class="icons_box">
+            <button class="icon_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="icon_btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="icon_btn"><i class="fa-solid fa-user"></i></button>
+        </div>
+    </header>
+
+          <!-- product -->
+          <section class="product product_output">
+            <h1 class="feature_h1">Our top Products</h1>
+            <div class="feature_main">
+            <div class="feature_card">
+                <img class="product_img" src="https://grocery-store-react.netlify.app/image/product-1.png" alt="">
+                <h1>Fresh Orange</h1>
+                <h3 class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </h3>
+                <h4>20/kg - 30/kg</h4>
+                <button class="img_btn">Add to cart</button>
+            </div>
+            <div class="feature_card">
+                <img class="product_img" src="https://grocery-store-react.netlify.app/image/product-2.png" alt="">
+                <h1>Fresh Onion</h1>
+                <h3 class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </h3>
+                <h4>20/kg - 30/kg</h4>
+                <button class="img_btn">Add to cart</button>
+            </div>
+            <div class="feature_card">
+                <img class="product_img" src="https://grocery-store-react.netlify.app/image/product-7.png" alt="">
+                <h1>Fresh Carrot</h1>
+                <h3 class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </h3>
+                <h4>20/kg - 30/kg</h4>
+                <button class="img_btn">Add to cart</button>
+            </div>
+           </div>
+        </section>
+          <!-- // predicted images -->
+    
+          <!-- product -->
+
+          <section class="product product_output">
+            <h1 class="feature_h1">Recommended for you</h1>
+            <div class="output_box">
+
+                {% for item  in items  %}
+                <div class="card">
+                    <img src="{{ item.image }}" alt="this is image">
+
+                    <h4>{{ item.name }}</h4>
+                </div>
+                {% endfor %}
+
+            </div>
+        </section>
+</body>
+</html>

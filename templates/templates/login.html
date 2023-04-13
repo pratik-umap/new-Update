@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+ body{
+    background-color: #eee;
+}
+#preloader{
+    background: #000 url(./circle-loader-gif-2.gif)no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.login{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_form{
+    height: 280px;
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+}
+.login_form > h2{
+    padding: 0 100px;
+}
+
+.name{
+    margin: 30px 10px;
+}
+.input{
+    height: 30px;
+    width: 230px;
+    text-indent: 10px;
+    outline: none;
+    margin:8px 0px;
+}
+.submit_btn{
+    padding: 10px 130px;
+    margin-left: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.create_btn{
+    padding: 10px 91px;
+    margin-left: 25px;
+    margin-top: 20px;  
+    font-size: 15px;
+    cursor: pointer;
+}
+.create_btn > a{
+    text-decoration: none;
+    color: black;
+}
+</style>
+<body>
+    <div id="preloader"></div>
+    <div class="login">
+        <div class="login_form">
+         <h2>Login Form</h2>
+           <form action="/predict" method="POST">
+              <label class="name">User Id - </label>
+              <input type="text" class="input" onchange="getName(this.value)" placeholder="Enter User id"/>
+
+              <label class="name">Password - </label>
+              <input type="password" name="Order_id" class="input" placeholder="Enter password" required/>
+            
+              <button type="submit" class="submit_btn">Login</button>
+           </form>
+        </div> 
+     </div>
+<script>
+    let loader=document.getElementById("preloader");
+    window.addEventListener('load',function () {
+        loader.style.display="none";
+    })
+</script>
+</body>
+</html>
